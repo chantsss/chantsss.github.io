@@ -96,12 +96,12 @@
                                 <h4><strong>Paper</strong></h4>
                         </a>
                     </li>
-                    <li>
+                    <!-- <li>
                         <a href="https://youtu.be/oPRRBbc49nw">
                             <image src="img/youtube_icon.png" height="60px">
                                 <h4><strong>Video</strong></h4>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
                         <a href="https://chantsss.github.io/FCUS">
                             <image src="img/github.png" height="60px">
@@ -123,7 +123,7 @@
             </div>
         </div> -->
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-10 col-md-offset-1" style="background: #F2F2F2">
                 <h3>
                     Abstract & Method
@@ -155,10 +155,54 @@
                 </p>
             </div>
         </div>
-        <p>
+        <p> -->
+
+        <!-- Paper abstract -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered">
+                <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract & Method</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Abstract— Vehicle trajectory prediction is essential to autonomous driving tasks. 
+                        Accurate trajectory prediction of other
+                        traffic agents can significantly improve the ability of scene
+                        understanding and eventually improve the driving safety level
+                        of autonomous vehicles. Popular trajectory prediction methods
+                        leverage traffic rules by considering maps or lane graphs as
+                        a part of the input. However, this implicit representation is
+                        insufficient and cannot guarantee an accurate understanding
+                        of traffic rules through the model. In this paper, we introduce
+                        FCUS, a novel method to incorporate traffic rules in vehicle
+                        forecasting by explicitly modeling them into continuous signal
+                        temporal logic (STL) features into a GAN-style neural network.
+                        The model first takes the input of history trajectories and rasterized or vectorized
+                        maps, depending on the generator’s backbone. The predicted
+                        trajectories and ground truth are then fed to a rule checker,
+                        which assigns each element the rule satisfaction degree as
+                        the STL feature. Meanwhile, negative trajectories set are
+                        selected from by rule checker for calculating the unlikelihood
+                        loss. Subsequently, trajectories with STL features are passed
+                        through a Discriminator to output the score of each trajectory.
+                    </p>
+                    <p class="text-center">
+                        <img src="./img/overview_new_new.png" class="center">
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End paper abstract -->
+
+
+
+
+
 
         <div class="row">
-            <div class="row">
+            <div class="row" style="background: #F2F2F2">
                 <h3>
                     Qualitative Analysis (Autobot vs. FCUS+Autobot)
                 </h3>
@@ -174,11 +218,11 @@
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="row">
                 <h2> More Visualization Videos</h2>
             </div>
-        </div>
+        </div> -->
 
         <!-- <div class="row">
             <div class="row">
@@ -186,8 +230,7 @@
             </div>
         </div> -->
 
-
-        <video width="800" height="450" muted controls loop autoplay>
+        <!-- <video width="800" height="450" muted controls loop autoplay>
             <source src="videos/Autobot.mp4" type="video/mp4">
         </video>
         <p>
@@ -205,11 +248,11 @@
         <video width="800" height="450" muted controls loop autoplay>
             <source src="videos/Multipath.mp4" type="video/mp4">
         </video>
-        </p>
+        </p> -->
 
-        <!-- <div class="row">
+       <div class="row">
             <div class="col-md-10 col-md-offset-1">
-                <h3> Yield to a fast-approaching vehicle </h3>
+                <h3> Visualization Videos </h3>
             </div>
             <div class="row">
                 <div class="columns is-multiline iscenterd">
@@ -217,25 +260,37 @@
                         style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
                         <tr>
                             <td style="padding:0 0px 0 0px;">
+                                <h4>
+                                    Autobot vs. FCUS+Autobot
+                                </h4>
                                 <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/yield/mpnp.mp4" type="video/mp4">
+                                    <source src="videos/Autobot.mp4" type="video/mp4">
                                 </video>
                             </td>
                             <td style="padding:0 0px 0 0px;">
+                                <h4>
+                                    Vectornet vs. FCUS+Vectornet
+                                </h4>
                                 <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/yield/urban_driver.mp4" type="video/mp4">
+                                    <source src="videos/Vectornet.mp4" type="video/mp4">
                                 </video>
                             </td>
                         </tr>
                         <tr>
                             <td style="padding:0 0px 0 0px;">
+                                <h4>
+                                    PGP vs. FCUS+PGP
+                                </h4>
                                 <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/yield/chauffernet.mp4" type="video/mp4">
+                                    <source src="videos/PGP.mp4" type="video/mp4">
                                 </video>
                             </td>
                             <td style="padding:0 0px 0px;">
+                                <h4>
+                                    Multipath vs. FCUS+Multipath
+                                </h4>
                                 <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/yield/chauffernet_vec.mp4" type="video/mp4">
+                                    <source src="videos/Multipath.mp4" type="video/mp4">
                                 </video>
                             </td>
                         </tr>
@@ -244,7 +299,7 @@
             </div>
         </div>
 
-        <div class="row">
+        <!-- <div class="row">
             <div class="col-md-10 col-md-offset-1">
                 <h3> Avoid a parking car </h3>
             </div>
@@ -422,7 +477,7 @@
                     </table>
                 </div>
             </div>
-        </div> --> -->
+        </div> -->
 
         <!-- <div class="row">
             <div class="col-md-8 col-md-offset-2">
