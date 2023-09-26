@@ -52,6 +52,18 @@
 			font-size: 18px;
 			margin-top: 10px;
 		}
+
+        .item::before {
+			content: attr(data-text);
+			position: absolute;
+			top: -30px;
+			left: 50%;
+			transform: translateX(-50%);
+			background-color: #fff;
+			padding: 5px 10px;
+			border-radius: 5px;
+			box-shadow: 0 0 5px rgba(0,0,0,0.3);
+		}
 	</style>
 
 
@@ -188,7 +200,7 @@
 
         <div class="container-gif">
 
-            <div class="item">
+            <div class="item", data-text="这是第四行的解释">
                 <img src="img/HiVT1084.gif" alt="gif1">
                 <h3>HiVT</h3>
             </div>
