@@ -212,11 +212,7 @@
                     <div class="content has-text-justified">
                 <div class="content has-text-justified">
                 <p>
-                    A turning scene in NuScenes. Images in the first and second columns demonstrate applying Autobot and
-                    Autobot+POP, respectively. Predicted trajectories are in red; rule-violated samples are in blue, the yellow curve in the
-                    last column representing the ground truth. At first, both Autobot and Autobot+POP can produce reasonable predictions.
-                    But when the vehicle approaches the corner, Autobot is no longer reliable and generate multiple rule-violated samples.
-                </p>
+                    We demonstrate a scenario in our simulator where a self-driving vehicle navigates through a congested traffic intersection, as shown in Figure \ref{fig}. During the initial phase of the simulation, the AV intends to traverse the intersection with a planned speed of 6.3 m/s. However, due to insufficient observation, the HiVT predictor inaccurately predicts the future trajectory in the first two frames. As a result, the AV fails to account for the movement of the vehicle below and begins to accelerate. By frame 3, the speed has already reached 8.7 m/s, making it too late to decelerate and leading to a collision. In contrast, the AV with the POP-H predictor consistently provides more reasonable predictions (indicated by the black scatter line) from frame 1 to frame 5, ensuring a higher level of safety.                </p>
                 <p class="text-center">
                     <img src="./img/demo_page-0001.jpg" class="center">
                 </p>
