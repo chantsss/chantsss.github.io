@@ -27,19 +27,27 @@
 
     <script src="js/app.js"></script>
 
-	<title>并排放置的 GIF 图片</title>
+	<title>自适应页面宽度的 GIF 图片</title>
 	<style>
 		.gif-container {
 			display: flex;
 			flex-direction: row;
 			justify-content: center;
 			align-items: center;
+			flex-wrap: wrap;
 		}
 
 		.gif-container img {
-			width: 200px;
-			height: 200px;
-			margin-right: 20px;
+			max-width: 100%;
+			height: auto;
+			margin: 10px;
+		}
+
+		.gif-container .gif-title {
+			text-align: center;
+			font-size: 24px;
+			font-weight: bold;
+			margin-top: 20px;
 		}
 	</style>
 
@@ -213,8 +221,14 @@
         </section> -->
 
         <div class="gif-container">
-            <img src="img/HiVT1084.gif" alt="GIF 1">
-            <img src="img/POP1084.gif" alt="GIF 2">
+            <div>
+                <img src="img/HiVT1084.gif" alt="GIF 1">
+                <div class="gif-title">GIF 1</div>
+            </div>
+            <div>
+                <img src="img/POP1084.gif" alt="GIF 2">
+                <div class="gif-title">GIF 2</div>
+            </div>
         </div>
 
 </body>
