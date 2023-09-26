@@ -30,19 +30,22 @@
 	<title>8个gif排列成4行2列</title>
 	<style>
 		.container {
-			display: grid;
-			grid-template-columns: repeat(2, 1fr);
-			grid-template-rows: repeat(4, 1fr);
-			grid-gap: 20px;
 			max-width: 1000px;
 			margin: 0 auto;
 			padding: 20px;
+			overflow: hidden;
 		}
 
 		.item {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+			float: left;
+			width: 48%;
+			margin-right: 4%;
+			margin-bottom: 20px;
+			text-align: center;
+		}
+
+		.item:last-child {
+			margin-right: 0;
 		}
 
 		.item img {
