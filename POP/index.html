@@ -30,22 +30,18 @@
 	<title>8个gif排列成4行2列</title>
 	<style>
 		.container {
+			display: flex;
+			flex-wrap: wrap;
 			max-width: 1000px;
 			margin: 0 auto;
 			padding: 20px;
-			overflow: hidden;
+			justify-content: space-between;
 		}
 
 		.item {
-			float: left;
-			width: 48%;
-			margin-right: 4%;
+			flex-basis: calc(50% - 10px);
 			margin-bottom: 20px;
 			text-align: center;
-		}
-
-		.item:last-child {
-			margin-right: 0;
 		}
 
 		.item img {
@@ -275,48 +271,40 @@
             </div>
         </div>
 
-        <!-- <div class="gif-container">
-            <div class="gif-row">
-                <div>
-                    <img src="img/HiVT1084.gif" alt="GIF 1">
-                    <div class="gif-title">GIF 1</div>
-                </div>
-                <div>
-                    <img src="img/POP1084.gif" alt="GIF 2">
-                    <div class="gif-title">GIF 2</div>
-                </div>
-            </div>
-            <div class="gif-row">
-                <div>
-                    <img src="img/HiVT674.gif" alt="GIF 3">
-                    <div class="gif-title">GIF 3</div>
-                </div>
-                <div>
-                    <img src="img/POP674.gif" alt="GIF 4">
-                    <div class="gif-title">GIF 4</div>
-                </div>
-            </div>
-            <div class="gif-row">
-                <div>
-                    <img src="img/HiVT739.gif" alt="GIF 5">
-                    <div class="gif-title">GIF 5</div>
-                </div>
-                <div>
-                    <img src="img/POP739.gif" alt="GIF 6">
-                    <div class="gif-title">GIF 6</div>
-                </div>
-            </div>
-            <div class="gif-row">
-                <div>
-                    <img src="img/HiVT844.gif" alt="GIF 7">
-                    <div class="gif-title">GIF 7</div>
-                </div>
-                <div>
-                    <img src="img/POP844.gif" alt="GIF 8">
-                    <div class="gif-title">GIF 8</div>
-                </div>
-            </div>
-        </div> -->
+	<div class="container">
+		<div class="item">
+			<img src="gif1.gif" alt="gif1">
+			<h3>标题1</h3>
+		</div>
+		<div class="item">
+			<img src="gif2.gif" alt="gif2">
+			<h3>标题2</h3>
+		</div>
+		<div class="item">
+			<img src="gif3.gif" alt="gif3">
+			<h3>标题3</h3>
+		</div>
+		<div class="item">
+			<img src="gif4.gif" alt="gif4">
+			<h3>标题4</h3>
+		</div>
+		<div class="item">
+			<img src="gif5.gif" alt="gif5">
+			<h3>标题5</h3>
+		</div>
+		<div class="item">
+			<img src="gif6.gif" alt="gif6">
+			<h3>标题6</h3>
+		</div>
+		<div class="item">
+			<img src="gif7.gif" alt="gif7">
+			<h3>标题7</h3>
+		</div>
+		<div class="item">
+			<img src="gif8.gif" alt="gif8">
+			<h3>标题8</h3>
+		</div>
+	</div>
 
 
 </body>
