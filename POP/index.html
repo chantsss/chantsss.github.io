@@ -26,6 +26,24 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
 
     <script src="js/app.js"></script>
+
+	<title>并排放置的 GIF 图片</title>
+	<style>
+		.gif-container {
+			display: flex;
+			flex-direction: row;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.gif-container img {
+			width: 200px;
+			height: 200px;
+			margin-right: 20px;
+		}
+	</style>
+
+
 </head>
 
 <body>
@@ -153,7 +171,7 @@
         <p> -->
 
         <!-- Paper abstract -->
-        <section class="section hero is-light">
+        <!-- <section class="section hero is-light">
             <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
                 <div class="column is-four-fifths">
@@ -169,14 +187,12 @@
                 </div>
             </div>
             </div>
-        </section>
+        </section> -->
         <!-- End paper abstract -->
 
 
 
-
-
-        <section class="section hero is-light">
+        <!-- <section class="section hero is-light">
         <div class="container is-max-desktop">
             <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
                 <div class="column is-four-fifths">
@@ -194,321 +210,13 @@
                 </p>
             </div>
         </div>
-        </section>
+        </section> -->
 
-       <!-- <div class="row">
-            <div class="row" style="background: #F2F2F2">
-                    <h3> 
-                        Visualization Videos 
-                    </h3>
-                <div class="row">
-                    <div class="columns is-multiline">
-                        <table
-                            style="border:1px;margin-right:auto;margin-left:auto;">                            
-                            <tr>
-                                <th align="center">Autobot vs. POP+Autobot</th>
-                                <th align="center">Vectornet vs. POP+Vectornet</th>
-                            </tr>
-
-                            <tr>
-                                <td style="padding:0 0px 0 0px;">
-                                    <video width="550" height="300" muted controls loop autoplay>
-                                        <source src="videos/Autobot.mp4" type="video/mp4">
-                                    </video>
-                                </td>
-                                <td style="padding:0 0px 0 0px;">
-                                    <video width="550" height="300" muted controls loop autoplay>
-                                        <source src="videos/Vectornet.mp4" type="video/mp4">
-                                    </video>
-                                </td>
-                            </tr>
-
-                            <tr>
-                                <th align="center">PGP vs. POP+PGP</th>
-                                <th align="center">Multipath vs. POP+Multipath</th>
-                            </tr> 
-                            
-                            <tr>
-                                <td style="padding:0 0px 0 0px;">
-                                    <video width="550" height="300" muted controls loop autoplay>
-                                        <source src="videos/PGP.mp4" type="video/mp4">
-                                    </video>
-                                </td>
-                                <td style="padding:0 0px 0px;">
-                                    <video width="550" height="300" muted controls loop autoplay>
-                                        <source src="videos/Multipath.mp4" type="video/mp4">
-                                    </video>
-                                </td>
-                            </tr>
-                        </table>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
-
-
-    <!-- Youtube video -->
-    <!--
-    <section class="hero is-small is-light">
-        <div class="hero-body">
-            <div class="container">
-                <h2 class="title is-3">Video Presentation</h2>
-                <div class="columns is-centered has-text-centered">
-                    <div class="column is-four-fifths">
-                        <div class="publication-video">
-                            <video muted controls loop autoplay>
-                                <source src="videos/demo_video_IROS_1080.mp4" type="video/mp4">
-                            </video>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    -->
-    <!-- End youtube video -->
-
-
-    <!-- Video carousel -->
-    <section class="hero is-small">
-        <div class="hero-body">
-        <div class="container">
-            <h2 class="title is-3">Animations</h2>
-            <div id="results-carousel" class="carousel results-carousel">
-            <div class="item item-video1">
-                <video poster="" id="video1" autoplay controls muted loop width="100%" object-fit: scale-down>
-                <!-- Your video file here -->
-                <source src="videos/Autobot.mp4"
-                type="video/mp4">
-                </video>
-            </div>
-            <div class="item item-video2">
-                <video poster="" id="video2" autoplay controls muted loop width="100%" object-fit: scale-down>
-                <!-- Your video file here -->
-                <source src="videos/Vectornet.mp4"
-                type="video/mp4">
-                </video>
-            </div>
-            <div class="item item-video3">
-                <video poster="" id="video3" autoplay controls muted loop width="100%"  object-fit: scale-down>
-                <!-- Your video file here -->
-                <source src="videos/PGP.mp4"
-                type="video/mp4">
-                </video>
-            </div>
-            <div class="item item-video4">
-                <video poster="" id="video4" autoplay controls muted loop width="100%" object-fit: scale-down>\
-                <!-- Your video file here -->
-                <source src="videos/Multipath.mp4"
-                type="video/mp4">
-                </video>
-            </div>
-            </div>
-        </div>
-        </div>
-    </section>
-    <!-- End video carousel -->
-
-        <!-- <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Avoid a parking car </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/parking_car/mpnp.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/parking_car/urban_driver.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/parking_car/chauffernet.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/parking_car/chauffernet_vec.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
+        <div class="gif-container">
+            <img src="img/HiVT1084.gif" alt="GIF 1">
+            <img src="img/POP1084.gif" alt="GIF 2">
         </div>
 
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h2> Additional Qualitative Results (MPNP)</h2>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Lane-keeping </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/lanekeep_1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/lanekeep_2.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Yielding </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/yeild_1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/yeild_2.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Traffic signal </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/traffic_signal_1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/traffic_signal_2.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/traffic_signal_3.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/traffic_signal_4.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Turning </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/turning_1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/turning_2.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-10 col-md-offset-1">
-                <h3> Intersection </h3>
-            </div>
-            <div class="row">
-                <div class="columns is-multiline iscenterd">
-                    <table
-                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-                        <tr>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/intersection_1.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                            <td style="padding:0 0px 0 0px;">
-                                <video width="450" height="278" muted controls loop autoplay>
-                                    <source src="videos/others/intersection_2.mp4" type="video/mp4">
-                                </video>
-                            </td>
-                        </tr>
-                    </table>
-                </div>
-            </div>
-        </div> -->
-
-        <!-- <div class="row">
-            <div class="col-md-8 col-md-offset-2">
-                <h3>
-                    BibTeX
-                </h3>
-                <div class="row align-items-center">
-                    <div class="col py-3">
-                        <pre class="border">
-@article{jcheng2022mpnp,
-title={{MPNP}: Multi-Policy Neural Planner for Urban Driving},
-author={Jie Cheng and Ren Xin and Sheng Wang and Ming Liu},
-journal={arXiv},
-year={2022}
-}
-                    </pre>
-                    </div>
-                </div>
-            </div>
-        </div> -->
 </body>
 
 </html>
