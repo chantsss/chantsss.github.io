@@ -148,7 +148,7 @@
                 <h2 class="title is-3">Abstract & Method</h2>
                 <div class="content has-text-justified">
                     <p>
-                        Accurate trajectory prediction is crucial for safe and efficient autonomous driving, but handling partial observations presents significant challenges. To address this, we propose a novel trajectory prediction framework called Partial Observations Prediction (POP) for congested urban road scenarios. The framework consists of two stages: self-supervised learning (SSL) and feature distillation. In SSL, a reconstruction branch reconstructs the hidden history of partial observations using a mask procedure and reconstruction head. The feature distillation stage transfers knowledge from a fully observed teacher model to a partially observed student model, improving prediction accuracy. POP achieves comparable results to top-performing methods in open-loop experiments and outperforms the baseline method in closed-loop simulations, including safety metrics. Qualitative results illustrate the superiority of POP in providing reasonable and safe trajectory predictions.
+                        Accurate trajectory prediction is crucial for safe and efficient autonomous driving, but handling partial observations presents significant challenges. To address this, we propose a novel trajectory prediction framework called Partial Observations Prediction (POP) for congested urban road scenarios. The framework consists of two key stages: self-supervised learning (SSL) and feature distillation. POP first employs SLL to help the model learn to reconstruct history representations, and then utilizes feature distillation as the fine-tuning task to transfer knowledge from the teacher model, which has been pre-trained with complete observations, to the student model, which has only few observations. POP achieves comparable results to top-performing methods in open-loop experiments and outperforms the baseline method in closed-loop simulations, including safety metrics. Qualitative results illustrate the superiority of POP in providing reasonable and safe trajectory predictions. 
                     </p>
                     <p class="text-center">
                         <img src="./img/overview.jpg" class="center">
@@ -241,6 +241,23 @@
                 <h3>POP-H</h3>
             </div>
         </div>
+
+    <!--BibTex citation -->
+    <section class="section" id="BibTeX">
+        <div class="container is-max-desktop content">
+        <h2 class="title">BibTeX</h2>
+        <pre><code>@misc{wang2023improving,
+            title={Improving Autonomous Driving Safety with POP: A Framework for Accurate Partially Observed Trajectory Predictions}, 
+            author={Sheng Wang and Yingbing Chen and Jie Cheng and Xiaodong Mei and Yongkang Song and Ming Liu},
+            year={2023},
+            eprint={2309.15685},
+            archivePrefix={arXiv},
+            primaryClass={cs.RO}
+      }</code></pre>
+        </div>
+    </section>
+    <!--End BibTex citation -->
+
 
 
 </body>
