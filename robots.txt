@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://chantsss.github.io/homepage/sitemap.xml
+Sitemap: https://chantsss.github.io/sitemap.xml
