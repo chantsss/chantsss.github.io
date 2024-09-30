@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Dragtraffic</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--     <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+	<style>
+		.container-gif {
+			display: flex;
+			flex-wrap: wrap;
+			max-width: 1000px;
+			margin: 0 auto;
+			padding: 20px;
+			justify-content: space-between;
+		}
+
+		.item {
+			flex-basis: calc(50% - 10px);
+			margin-bottom: 20px;
+			text-align: center;
+			position: relative;
+			width: 900px;
+			height: 600px;
+		}
+
+		.item img {
+			max-width: 100%;
+			height: auto;
+		}
+
+		.item h3 {
+			font-size: 18px;
+			margin-top: 10px;
+		}
+
+	</style>
+
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                Dragtraffic: Interactive and Controllable Traffic Scene Generation for Autonomous Driving
+                <small>
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://chantsss.github.io/Dragtraffic">
+                            <sup>1</sup>Sheng WANG
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>1</sup>Ge SUN
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>2</sup>Fulong MA
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>1</sup>Tianshuai HU
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>3</sup>Qiang QIN
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>4</sup>Yongkang SONG
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                            <sup>2</sup>Lei ZHU
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <a href="https://precognition.team/">
+                            <sup>2</sup>Junwei LIANG
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    <sup>1</sup>The Hong Kong University of Science and Technology <br>
+                    <sup>2</sup>The Hong Kong University of Science and Technology (Guangzhou) <br>
+                    <sup>3</sup>KTH Royal Institute of Technology <br>
+                    <sup>4</sup>Lotus Technology Ltd, China
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://arxiv.org/pdf/2404.12624.pdf">
+                            <image src="img/paper_cover.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://youtu.be/oPRRBbc49nw">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/chantsss/Dragtraffic">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Paper abstract -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract & Method</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        The evaluation and training of autonomous driving systems require diverse and scalable corner cases. However, most existing scene generation methods lack controllability, accuracy, and versatility, resulting in unsatisfactory generation results. To address this problem, we propose Dragtraffic, a generalized, point-based, and controllable traffic scene generation framework based on conditional diffusion. Dragtraffic enables non-experts to generate a variety of realistic driving scenarios for different types of traffic agents through an adaptive mixture expert architecture. We use a regression model to provide a general initial solution and a refinement process based on the conditional diffusion model to ensure diversity. User-customized context is introduced through cross-attention to ensure high controllability. Experiments on a real-world driving dataset show that Dragtraffic outperforms existing methods in terms of authenticity, diversity, and freedom.
+                    </p>
+                    <p class="text-center">
+                        <img src="./img/overview.jpg" class="center">
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End paper abstract -->
+
+
+
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Case Analysis</h2>
+                    <div class="content has-text-justified">
+                <div class="content has-text-justified">
+                <p>
+                    The Figure below demonstrates the quality of scenes generated by DragTraffic based on existing data. We use the current frame information in the dataset and the information of the next nine seconds as conditions. The left-turn and right-turn scenes at the intersection where the most interactions occur are respectively shown in columns (a) and (b). These scenes reflect courtesy and competition for right of way among different agents. For example, in (a), Agent No. 9 and Agent No. 1 engage in a fierce competition for the right of way, while Agent No. 0 gives way. This shows that DragTraffic can simulate traffic participants in different situations under highly dynamic and complex traffic intersections to make reasonable, smooth, and realistic future actions, reflecting real-world characteristics. Next, we verify that this capability is not limited to simple log replay in more complex scenarios (c) and (d). We focus on agent No. 1, which is waiting at an intersection for the motorcycle in front to start. However, the movement of a large number of pedestrians around interferes with the decision-making of agent No. 1, which has a conservative driving style. As a result, it continues to watch the movements of pedestrians even when it is already driving to the intersection, leading to the phenomenon of robot freezing, which is common in the fields of autonomous driving and robotics. To address this issue, we design similar scenarios by setting the condition information for agent No. 1 (100 meters in front of it, longitudinal speed of 20m/s, and horizontal speed of -2m/s) to inspire more proactive behavior. As shown in (d), the results generated by DragTraffic are subject to our good scene editing control. Note that we only show the control of agent No. 1 for the convenience of explanation, but in fact, DragTraffic allows us to control the generation of multiple agents simultaneously. Unlike other methods of controlling generation (such as complex optimization constraints and loss design), these manipulation processes only require simple dragging or typing interactions, demonstrating the superiority of this framework in controlling degrees of freedom.                </p>
+                <p class="text-center">
+                    <img src="./img/demo_page-0001.jpg" class="center">
+                </p>
+            </div>
+        </div>
+        </section>
+
+
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Generation Demonstration</h2>
+                        <div class="content has-text-justified">
+                    <div class="content has-text-justified">
+                </div>
+            </div>
+        </section>
+
+        <!-- 在这里插入mp4文件 -->
+        <video width="100%" height="100%" controls>
+            <source src="videos/media1.mp4" type="video/mp4">
+        </video>
+
+        <div class="text">
+            <p>The output is a 9 second long simulation with a sampling interval of 1 second. Please note that the generation time here is a bit long because we generated dynamic gif images for demonstration. 
+                Both training and UI code will be open source, please check our code repo for the latest information.</p>            
+        </div>
+
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">More Animations</h2>
+                        <div class="content has-text-justified">
+                    <div class="content has-text-justified">
+                </div>
+            </div>
+        </section>
+
+
+        <hr> <!-- 添加横线 --><div class="container-gif">
+
+            <div class="item">
+                <video src="videos/Drag1.mp4" alt="mp2_1" controls></video>
+                <p>The Editing results generated by DragTraffic.</p>
+            </div>
+            <div class="item">
+                <video src="videos/Drag1_gt.mp4" alt="mp3_1" controls></video>
+                <p>The collected ground truth log.</p>
+            </div>
+            <div class="text">
+                <p>The condition context of other agents is imposed by the ground truth at the 9th second in the dataset. Note, although the other agents’ condition context are ground truth, they all behaved more reasonably and human-like (for example, agents1, 4, 8 tried to speed up through the intersection, and agent3 was far away from agent0 who was driving on the highway) when agent0 left quickly. Instead of simply copying the log.</p>
+            </div>
+        </div>
+
+        <hr> <!-- 添加横线 --><div class="container-gif">
+
+            <div class="item">
+                <video src="videos/Vehicle1.mp4" alt="mp4_1" controls></video>
+                <p>Competing for the right to turn at intersections</p>
+            </div>
+            <div class="item">
+                <video src="videos/Vehicle2.mp4" alt="mp5_1" controls></video>
+                <p>Waiting at the red light at the intersection.</p>
+            </div>
+
+        </div>
+
+        <hr> <!-- 添加横线 --><div class="container-gif">
+
+            <div class="item">
+                <video src="videos/Cyclist1.mp4" alt="mp6_1" controls></video>
+                <p>Motorcycle overtaking from the side of the vehicle.</p>
+            </div>
+            <div class="item">
+                <video src="videos/Cyclist2.mp4" alt="mp7_1" controls></video>
+                <p>Forcing vehicles to wait when the light turns green.</p>
+            </div>
+
+        </div>
+        
+
+        <hr> <!-- 添加横线 --><div class="container-gif">
+
+            <div class="item">
+                <video src="videos/Pedestrian1.mp4" alt="mp8_1" controls></video>
+                <p>Multiple pedestrians cross the zebra crossing.</p>
+            </div>
+            <div class="item">
+                <video src="videos/Pedestrian2.mp4" alt="mp9_1" controls></video>
+                <p>After parking, walk to the parking lot exit.</p>
+            </div>
+        </div>
+
+
+</body>
+
+</html>

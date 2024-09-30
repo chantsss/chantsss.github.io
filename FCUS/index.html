@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>FCUS</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!--     <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💫</text></svg>"> -->
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                FCUS: Traffic Rule-Aware Vehicle Trajectory Forecasting Using Continuous Unlikelihood and Signal Temporal Logic Feature
+                <small>
+                </small>
+            </h1>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://chantsss.github.io/FCUS">
+                            Sheng Wang
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                        Ren Xin
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                        Yingbing Chen
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                        Jie Cheng
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                        Xiaodong Mei
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <!-- <a href="todo"> -->
+                        Fulong Ma
+                        <!-- </a> -->
+                    </li>
+                    <li>
+                        <a href="https://ram-lab.com/">
+                            Ming Liu
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <p>
+                    Hong Kong University of Science and Technology, <a href="https://ram-lab.com"> RAM-LAB</a>
+                </p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="https://ieeexplore.ieee.org/abstract/document/10354968">
+                            <image src="img/paper_cover.png" height="60px">
+                                <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                    <!-- <li>
+                        <a href="https://youtu.be/oPRRBbc49nw">
+                            <image src="img/youtube_icon.png" height="60px">
+                                <h4><strong>Video</strong></h4>
+                        </a>
+                    </li> -->
+                    <li>
+                        <a href="https://github.com/chantsss/FCUS">
+                            <image src="img/github.png" height="60px">
+                                <h4><strong>Code</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        
+        <!-- <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <div class="videoWrapper">
+                    <iframe width="560" height="349" src="https://youtube.com/embed/oPRRBbc49nw" frameborder="0"
+                        allowfullscreen></iframe>
+                </div>
+                <p>&nbsp;</p>
+            </div>
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-md-10 col-md-offset-1" style="background: #F2F2F2">
+                <h3>
+                    Abstract & Method
+                </h3>
+                <p class="text-justify">
+                    Abstract— Vehicle trajectory prediction is essential to autonomous driving tasks. 
+                    Accurate trajectory prediction of other
+                    traffic agents can significantly improve the ability of scene
+                    understanding and eventually improve the driving safety level
+                    of autonomous vehicles. Popular trajectory prediction methods
+                    leverage traffic rules by considering maps or lane graphs as
+                    a part of the input. However, this implicit representation is
+                    insufficient and cannot guarantee an accurate understanding
+                    of traffic rules through the model. In this paper, we introduce
+                    FCUS, a novel method to incorporate traffic rules in vehicle
+                    forecasting by explicitly modeling them into continuous signal
+                    temporal logic (STL) features into a GAN-style neural network.
+                    The model first takes the input of history trajectories and rasterized or vectorized
+                    maps, depending on the generator’s backbone. The predicted
+                    trajectories and ground truth are then fed to a rule checker,
+                    which assigns each element the rule satisfaction degree as
+                    the STL feature. Meanwhile, negative trajectories set are
+                    selected from by rule checker for calculating the unlikelihood
+                    loss. Subsequently, trajectories with STL features are passed
+                    through a Discriminator to output the score of each trajectory.
+                </p>
+                <p class="text-center">
+                    <img src="./img/overview_new_new.png" class="center">
+                </p>
+            </div>
+        </div>
+        <p> -->
+
+        <!-- Paper abstract -->
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                <div class="column is-four-fifths">
+                <h2 class="title is-3">Abstract & Method</h2>
+                <div class="content has-text-justified">
+                    <p>
+                        Abstract— Vehicle trajectory prediction is essential to autonomous driving tasks. 
+                        Accurate trajectory prediction of other
+                        traffic agents can significantly improve the ability of scene
+                        understanding and eventually improve the driving safety level
+                        of autonomous vehicles. Popular trajectory prediction methods
+                        leverage traffic rules by considering maps or lane graphs as
+                        a part of the input. However, this implicit representation is
+                        insufficient and cannot guarantee an accurate understanding
+                        of traffic rules through the model. In this paper, we introduce
+                        FCUS, a novel method to incorporate traffic rules in vehicle
+                        forecasting by explicitly modeling them into continuous signal
+                        temporal logic (STL) features into a GAN-style neural network.
+                        The model first takes the input of history trajectories and rasterized or vectorized
+                        maps, depending on the generator’s backbone. The predicted
+                        trajectories and ground truth are then fed to a rule checker,
+                        which assigns each element the rule satisfaction degree as
+                        the STL feature. Meanwhile, negative trajectories set are
+                        selected from by rule checker for calculating the unlikelihood
+                        loss. Subsequently, trajectories with STL features are passed
+                        through a Discriminator to output the score of each trajectory.
+                    </p>
+                    <p class="text-center">
+                        <img src="./img/overview_new_new.png" class="center">
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <!-- End paper abstract -->
+
+
+
+
+
+        <section class="section hero is-light">
+        <div class="container is-max-desktop">
+            <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                <div class="column is-four-fifths">
+                    <h2 class="title is-3">Qualitative Analysis (Autobot vs. FCUS+Autobot)</h2>
+                    <div class="content has-text-justified">
+                <div class="content has-text-justified">
+                <p>
+                    A turning scene in NuScenes. Images in the first and second columns demonstrate applying Autobot and
+                    Autobot+FCUS, respectively. Predicted trajectories are in red; rule-violated samples are in blue, the yellow curve in the
+                    last column representing the ground truth. At first, both Autobot and Autobot+FCUS can produce reasonable predictions.
+                    But when the vehicle approaches the corner, Autobot is no longer reliable and generate multiple rule-violated samples.
+                </p>
+                <p class="text-center">
+                    <img src="./img/visualization.png" class="center">
+                </p>
+            </div>
+        </div>
+        </section>
+
+       <!-- <div class="row">
+            <div class="row" style="background: #F2F2F2">
+                    <h3> 
+                        Visualization Videos 
+                    </h3>
+                <div class="row">
+                    <div class="columns is-multiline">
+                        <table
+                            style="border:1px;margin-right:auto;margin-left:auto;">                            
+                            <tr>
+                                <th align="center">Autobot vs. FCUS+Autobot</th>
+                                <th align="center">Vectornet vs. FCUS+Vectornet</th>
+                            </tr>
+
+                            <tr>
+                                <td style="padding:0 0px 0 0px;">
+                                    <video width="550" height="300" muted controls loop autoplay>
+                                        <source src="videos/Autobot.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td style="padding:0 0px 0 0px;">
+                                    <video width="550" height="300" muted controls loop autoplay>
+                                        <source src="videos/Vectornet.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th align="center">PGP vs. FCUS+PGP</th>
+                                <th align="center">Multipath vs. FCUS+Multipath</th>
+                            </tr> 
+                            
+                            <tr>
+                                <td style="padding:0 0px 0 0px;">
+                                    <video width="550" height="300" muted controls loop autoplay>
+                                        <source src="videos/PGP.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                                <td style="padding:0 0px 0px;">
+                                    <video width="550" height="300" muted controls loop autoplay>
+                                        <source src="videos/Multipath.mp4" type="video/mp4">
+                                    </video>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+
+
+
+    <!-- Youtube video -->
+    <!--
+    <section class="hero is-small is-light">
+        <div class="hero-body">
+            <div class="container">
+                <h2 class="title is-3">Video Presentation</h2>
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <div class="publication-video">
+                            <video muted controls loop autoplay>
+                                <source src="videos/demo_video_IROS_1080.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    -->
+    <!-- End youtube video -->
+
+
+    <!-- Video carousel -->
+    <section class="hero is-small">
+        <div class="hero-body">
+        <div class="container">
+            <h2 class="title is-3">Animations</h2>
+            <div id="results-carousel" class="carousel results-carousel">
+            <div class="item item-video1">
+                <video poster="" id="video1" autoplay controls muted loop width="100%" object-fit: scale-down>
+                <!-- Your video file here -->
+                <source src="videos/Autobot.mp4"
+                type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-video2">
+                <video poster="" id="video2" autoplay controls muted loop width="100%" object-fit: scale-down>
+                <!-- Your video file here -->
+                <source src="videos/Vectornet.mp4"
+                type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-video3">
+                <video poster="" id="video3" autoplay controls muted loop width="100%"  object-fit: scale-down>
+                <!-- Your video file here -->
+                <source src="videos/PGP.mp4"
+                type="video/mp4">
+                </video>
+            </div>
+            <div class="item item-video4">
+                <video poster="" id="video4" autoplay controls muted loop width="100%" object-fit: scale-down>\
+                <!-- Your video file here -->
+                <source src="videos/Multipath.mp4"
+                type="video/mp4">
+                </video>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+    <!-- End video carousel -->
+
+        <!-- <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Avoid a parking car </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/parking_car/mpnp.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/parking_car/urban_driver.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/parking_car/chauffernet.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/parking_car/chauffernet_vec.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h2> Additional Qualitative Results (MPNP)</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Lane-keeping </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/lanekeep_1.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/lanekeep_2.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Yielding </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/yeild_1.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/yeild_2.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Traffic signal </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/traffic_signal_1.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/traffic_signal_2.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/traffic_signal_3.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/traffic_signal_4.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Turning </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/turning_1.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/turning_2.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+                <h3> Intersection </h3>
+            </div>
+            <div class="row">
+                <div class="columns is-multiline iscenterd">
+                    <table
+                        style="border:0px;border-spacing:3px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+                        <tr>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/intersection_1.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                            <td style="padding:0 0px 0 0px;">
+                                <video width="450" height="278" muted controls loop autoplay>
+                                    <source src="videos/others/intersection_2.mp4" type="video/mp4">
+                                </video>
+                            </td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    BibTeX
+                </h3>
+                <div class="row align-items-center">
+                    <div class="col py-3">
+                        <pre class="border">
+@article{jcheng2022mpnp,
+title={{MPNP}: Multi-Policy Neural Planner for Urban Driving},
+author={Jie Cheng and Ren Xin and Sheng Wang and Ming Liu},
+journal={arXiv},
+year={2022}
+}
+                    </pre>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+</body>
+
+</html>
