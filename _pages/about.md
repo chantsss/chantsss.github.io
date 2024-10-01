@@ -2,14 +2,15 @@
 layout: about
 title: about
 permalink: /
-An optimistic pessimist.
+subtilte: An optimistic pessimist.
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
-    <p>W1-129, IADC</p>
+    <p>W1-129</p>
+    <p>Intelligent Autonomous Driving Center (IADC)</p>
 
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
