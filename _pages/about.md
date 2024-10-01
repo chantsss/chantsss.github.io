@@ -9,9 +9,7 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: 
-    <div style="text-align: center;">
       <p>An optimistic pessimist.</p>
-    </div>
 
 news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
