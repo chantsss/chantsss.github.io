@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtilte: Academy of Interdisciplinary Studies | Division of Emerging Interdisciplinary Areas (EMIA)
+subtitle: Division of Emerging Interdisciplinary Areas, HKSUT
 
 profile:
   align: right
