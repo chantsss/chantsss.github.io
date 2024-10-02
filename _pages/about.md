@@ -2,7 +2,9 @@
 layout: about
 title: about
 permalink: /
-subtilte: <p><small>Who is an optimistic pessimist.</small></p>
+subtilte: |
+    <p><small>Academy of Interdisciplinary Studies | Division of Emerging Interdisciplinary Areas (EMIA)
+    An optimistic pessimist.</small></p>
 
 profile:
   align: right
