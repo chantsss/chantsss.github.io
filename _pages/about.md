@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. in Robotics • Academy of Interdisciplinary Studies • HKSUT
+subtitle: Ph.D. student in Robotics • Academy of Interdisciplinary Studies • HKSUT
 
 profile:
   align: right
