@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: |
-    <p><small>This is an optimistic pessimist.
-    Office: W1-129 IADC
+    <p><small>This is an optimistic pessimist. <br>
+    Office: W1-129 IADC <br>
     Email: swangei[at]connect.ust.hk</small></p>
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
