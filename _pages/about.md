@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Ph.D. student in Robotics • Academy of Interdisciplinary Studies • HKSUT
+subtitle: <p><small> Ph.D. student in Division of Emerging Interdisciplinary Areas • HKSUT</small></p>
 
 profile:
   align: right
