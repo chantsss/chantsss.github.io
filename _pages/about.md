@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: Division of Emerging Interdisciplinary Areas, HKSUT
+subtitle: Ph.D. in Robotics • Academy of Interdisciplinary Studies • HKSUT
 
 profile:
   align: right
