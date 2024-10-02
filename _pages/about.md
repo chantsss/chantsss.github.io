@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <p><small> Ph.D. student in Division of Emerging Interdisciplinary Areas • HKSUT</small></p>
+subtitle: <p><small> Ph.D. student in Division of Emerging Interdisciplinary Areas • The Hong Kong University of Science and Technology</small></p>
 
 profile:
   align: right
