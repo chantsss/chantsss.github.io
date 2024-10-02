@@ -2,17 +2,16 @@
 layout: about
 title: about
 permalink: /
-subtilte: |
-    <p><small>Academy of Interdisciplinary Studies | Division of Emerging Interdisciplinary Areas (EMIA)
-    An optimistic pessimist.</small></p>
+subtilte: Academy of Interdisciplinary Studies | Division of Emerging Interdisciplinary Areas (EMIA)
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: |
-    <p><small>Office: W1-129 IADC
-    Email:swangei[at]connect.ust.hk</small></p>
+    <p><small>This is an optimistic pessimist.
+    Office: W1-129 IADC
+    Email: swangei[at]connect.ust.hk</small></p>
 news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
