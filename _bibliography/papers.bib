@@ -12,6 +12,20 @@
   website={https://chantsss.github.io/Dragtraffic/},
   code={https://github.com/chantsss/Dragtraffic},
   preview={Dragtraffic.png},
+  bibtex_show={true},
+  abstract={Evaluating and training autonomous driving systems require diverse and scalable corner cases. However,
+most existing scene generation methods lack controllability,
+accuracy, and versatility, resulting in unsatisfactory generation
+results. Inspired by DragGAN in image generation, we propose
+DragTraffic, a generalized, interactive, and controllable traffic
+scene generation framework based on conditional diffusion.
+DragTraffic enables non-experts to generate a variety of realistic
+driving scenarios for different types of traffic agents through an
+adaptive mixture expert architecture. We employ a regression
+model to provide a general initial solution and a refinement process based on the conditional diffusion model to ensure diversity.
+User-customized context is introduced through cross-attention
+to ensure high controllability. Experiments on a real-world driving dataset show that DragTraffic outperforms existing methods
+in terms of authenticity, diversity, and freedom.},
   year={2024}
 }
 
@@ -24,11 +38,21 @@
   number={},
   pages={14450-14456},
   selected={true},
+  abstract={Accurate trajectory prediction is crucial for safe and efficient autonomous driving, 
+  but handling partial observations presents significant challenges. To address this, 
+  we propose a novel trajectory prediction framework called Partial Observations Prediction (POP) for congested urban road scenarios. 
+  The framework consists of two key stages: self-supervised learning (SSL) and feature distillation. 
+  POP first employs SLL to help the model learn to reconstruct history representations, 
+  and then utilizes feature distillation as the fine-tuning task to transfer knowledge from the teacher model, 
+  which has been pre-trained with complete observations, to the student model, which has only few observations. 
+  POP achieves comparable results to topperforming methods in open-loop experiments and outperforms the baseline method in closed-loop simulations, 
+  including safety metrics. Qualitative results illustrate the superiority of POP in providing reasonable and safe trajectory predictions.},
   pdf={https://ieeexplore.ieee.org/abstract/document/10610154},
   abbr={ICRA2024},
   website={https://chantsss.github.io/POP/},
   code={https://github.com/chantsss/POP-CODE},
   preview={POP.png},
+  bibtex_show={true},
   keywords={Accuracy;Roads;Self-supervised learning;Predictive models;Trajectory;History;Task analysis},
   doi={10.1109/ICRA57147.2024.10610154}}
 
@@ -45,6 +69,7 @@
   website={https://chantsss.github.io/FCUS/},
   code={https://github.com/chantsss/FCUS},
   preview={FCUS.png},
+  bibtex_show={true},
   keywords={Biological system modeling;Neural networks;Predictive models;Trajectory;Safety;Forecasting;Task analysis},
   doi={10.1109/ROBIO58561.2023.10354968}}
 
@@ -62,6 +87,12 @@
   abbr={RAM2024},
   website={https://chenyingbing.github.io/xueshi_campus_av/},
   preview={RAM.png},
+  bibtex_show={true},
+  abstract={In recent years, the rapid evolution of autonomous vehicles (AVs) has reshaped global transportation systems, 
+leading to an increase in autonomous shuttle applications in people’s daily lives. Leveraging the accomplishments of our earlier endeavor, 
+particularly Hercules [1], an autonomous logistics vehicle for transporting goods, 
+we introduce Snow Lion, an autonomous shuttle vehicle specifically designed to transform on-campus transportation, 
+providing a safe and efficient mobility solution for students, faculty, and visitors.},
   keywords={Laser radar;Task analysis;Sensors;Point cloud compression;Location awareness;Three-dimensional displays;Planning},
   doi={10.1109/MRA.2024.3433168}}
 
@@ -78,6 +109,13 @@
   abbr={IROS2022},
   website={https://jchengai.github.io/mpnp/},
   preview={MPNP.png},
+  bibtex_show={true},
+  abstract={Our goal is to train a neural planner that can capture diverse driving behaviors in complex urban scenarios. 
+  We observe that even state-of-the-art neural planners are struggling to perform common maneuvers such as lane change, which is rather natural for human drivers.
+  We propose to explore the multi-modalities in the planning problem and force the neural planner to explicitly consider different policies.
+  This is achieved by generating the future trajectories conditioned on every possible reference line, which could simply be the centerline of the surrounding lanes. 
+  We find this simple strategy yet enables the planner to perform rich and complex behaviors. 
+  We train our model using real-world driving data and demonstrate the effectiveness of our method through both open-loop and closed-loop evaluations. },
   keywords={Force;Data models;Behavioral sciences;Trajectory;Planning;Intelligent robots},
   doi={10.1109/IROS47612.2022.9982111}}
 
@@ -94,6 +132,7 @@
     abstract = "{Computational fluid dynamics predictions based on machine learning methods have become an important area of turbulence and transition research. However, the otherwise efficient and low-cost transition models based on Reynolds-averaged Navier–Stokes (RANS) methods have limited capability for dealing with hypersonic conditions, owing to the strong compressibility and multimodal features that are then present. This paper develops an augmented method for transition heat flux prediction. A deep neural network (DNN) is trained using flight test data from the China Aerodynamics Research and Development Center. The subject of the flight test is an inclined blunt cone on which temperature sensors are mounted. The training data consist of RANS solutions and flight test data, with the input being the mean strain/rotation rate tensor from RANS and the output the heat flux values from the flight test. The trained DNN model based on the RANS results can give heat flux values with similar accuracy to those from the flight test. For the blunt cone, the trained DNN model can accurately forecast the heat distribution caused by the Mack mode and the cross-flow transition under various inflow conditions, and the errors in the prediction results are all within 15\%. Furthermore, the generalizability of the trained DNN model is also verified on an elliptic cone under different inflow conditions. This paper provides a new transition prediction approach with low computational cost and high accuracy. The proposed method solves the problem that the transition model fails in some working conditions and avoids re-modifying empirical criteria in the RANS model. It has both advantages of a transition model and flight tests and maintains the excellent potential for application.}",
     issn = {1070-6631},
     doi = {10.1063/5.0093438},
+    bibtex_show={true},
     pdf = {https://pubs.aip.org/aip/pof/article-abstract/34/5/054106/2847178/A-flight-test-based-deep-learning-method-for?redirectedFrom=fulltext},
     eprint = {https://pubs.aip.org/aip/pof/article-pdf/doi/10.1063/5.0093438/16632627/054106\_1\_online.pdf},
 }
@@ -109,6 +148,7 @@
   abbr={IROS2023},
   pdf={https://ieeexplore.ieee.org/abstract/document/10341687},
   keywords={Point cloud compression;Training;Laser radar;Uncertainty;Semantic segmentation;Roads;Training data},
+  bibtex_show={true},
   doi={10.1109/IROS55552.2023.10341687}}
 
 @INPROCEEDINGS{10011672,
@@ -125,6 +165,8 @@
   pdf={https://ieeexplore.ieee.org/abstract/document/10011672},
   preview={ROBIO_BEST.png},
   keywords={Training;Laser radar;Semantic segmentation;Training data;Transforms;Tail;Sensor systems},
+  bibtex_show={true},
+  abstract={With the development of autonomous driving, more autonomous vehicles are equipped with multiple sensors to perform better. For multi-sensor systems, accurate extrinsic calibration is a prerequisite for perception and localization systems. Extrinsic calibration aims to transform two or more sensors' coordinates into a unified spatial coordinate system. Sensors usually need to be calibrated after installation to ensure accurate measurements. Most existing methods require special calibration markers or rely heavily on additional sensors to solve this problem. Recently, researchers have proposed a novel method that can calibrate extrinsic parameters using the common corners in surroundings to solve the multi-LiDARs extrinsic calibration problem, three linearly independent planar surfaces of the corner are utilized to compute the extrinsic parameters. However, this method is relatively inefficient and requires manual operation, especially in some hard scenes. To overcome this problem, we propose using the learning-based method to segment corners, improving efficiency and convenience without losing accuracy. By introducing learning-based corner segmentation method, we can achieve “one-click” extrinsic calibration, that is, there is no need to prepare auxiliary markers, there is no need to collect a large amount of data and data preprocessing, and the external parameters can be automatically calibrated.},
   doi={10.1109/ROBIO55434.2022.10011672}}
 
 @INPROCEEDINGS{xin2024generictrajectoryplanningmethod,
@@ -136,6 +178,7 @@
       year={2024},
       abbr={IROS2024},
       note={[IROS2024 Accepted]},
+      bibtex_show={true}
 }
 
 @INPROCEEDINGS{hu2024dhp,
@@ -148,6 +191,7 @@
   code={https://github.com/hutslib/DHP-Mapping},
   abbr={IROS2024},
   note={[IROS2024 Accepted]},
+  bibtex_show={true}
 }
 
 @INPROCEEDINGS{IR-STP,
@@ -158,5 +202,6 @@
   code={https://github.com/ChenYingbing/IR-STP-Planner},
   abbr={TITS2024},
   year={2024},
+  bibtex_show={true}
 }
 
