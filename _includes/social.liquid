@@ -132,15 +132,16 @@
     </div>
     {% include scripts/wechatModal.liquid %}
   {% endif %}
-  <!-- ClustrMaps Embed Code -->
-  <a href="https://clustrmaps.com/site/1c1n4" title="Visit tracker">
-    <img src="//www.clustrmaps.com/map_v2.png?d=nhTqm4t1qdFKLp7GGjIY0yMJpVYIB7NFCl5iyQNPZZM&cl=ffffff" style="max-width: 300px; max-height: 200px; overflow: hidden;" />
-  </a>
 </div>
+
+<!-- ClustrMaps Embed Code -->
+<div id="clustrmaps-widget" style="max-width: 300px; max-height: 200px; overflow: hidden;"></div>
+<script type="text/javascript" id="clustrmaps" src="//clustrmaps.com/map_v2.js?d=nhTqm4t1qdFKLp7GGjIY0yMJpVYIB7NFCl5iyQNPZZM&cl=ffffff&w=a"></script>
 
 <style>
   .social-media {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
   }
   .social-media a {
