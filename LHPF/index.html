@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <script type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Dragtraffic</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+
+    <script src="js/app.js"></script>
+
+    <style>
+        .container-gif {
+            display: flex;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            justify-content: space-between;
+        }
+
+        .item {
+            flex-basis: calc(50% - 10px);
+            margin-bottom: 20px;
+            text-align: center;
+            position: relative;
+            width: 900px;
+            height: 600px;
+        }
+
+        .item img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .item h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+    </style>
+
+
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h1 class="col-md-12 text-center">
+                LHPF: Look back the History and Plan for the Future in Autonomous Driving
+                <small>
+                </small>
+            </h1>
+        </div>
+
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Planning Demonstration</h2>
+                        <div class="content has-text-justified">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="text">
+            <p>The ego plan is shown in yellow and pink, while agent predictions are depicted in green and blue. Reference lines are visualized as shaded arrows, and the ground truth trajectory appears as a gray shadow. Note that in reactive closed-loop simulation, the ground truth is not the optimal solution since observations change dynamically and it serves only as a recording of logged data. </p>            
+        </div>
+
+        <section class="section hero is-light">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                    <div class="column is-four-fifths">
+                        <div class="content has-text-justified">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>        
+        </section>        
+        
+        <!-- 5 interesting -->
+        <hr> <div class="container-gif">
+
+            <div class="item">
+                <video src="videos/pluto_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp1_1" controls></video>
+                <p>(Pluto) An aggressive overtaking behavior.</p>
+            </div>
+            <div class="item">
+                <video src="videos/lhpf_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp2_1" controls></video>
+                <p>(LHPF) An aggressive overtaking behavior. The ego vehicle
+                    changes lanes to a neighboring lane at first, accelerates past
+                    vehicles in the original lane, and successfully completes the overtaking. This scenario highlights the
+                    ability of our method to make timely lane changes and execute aggressive overtaking maneuvers effectively.</p>
+            </div>
+
+        </div>
+
+        <hr> <div class="container-gif">
+
+            <div class="item">
+                <video src="videos/pluto_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp1_1" controls></video>
+                <p>(Pluto) Competing for the right to turn at intersections.</p>
+            </div>
+            <div class="item">
+                <video src="videos/lhpf_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp2_1" controls></video>
+                <p>(LHPF) Competing for the right to turn at intersections. LHPF exhibites more natural and efficient driving policy when interact with other agents.</p>
+            </div>
+
+        </div>      
+
+        <hr> <div class="container-gif">
+
+            <div class="item">
+                <video src="videos/pluto_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp1_1" controls></video>
+                <p>(Pluto) A collision scenario. While Pluto's conservative strategy often avoids risks, it fails to ensure safety in highly interactive scenarios, where LHPF demonstrates smoother interactions with surrounding vehicles.</p>
+            </div>
+            <div class="item">
+                <video src="videos/lhpf_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp2_1" controls></video>
+                <p>(LHPF)A collision scenario. </p>
+            </div>
+
+        </div> 
+
+        <hr> <div class="container-gif">
+
+            <div class="item">
+                <video src="videos/pluto_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp1_1" controls></video>
+                <p>(Pluto) A robot frozen scenario. 
+                    This phenomenon highlights a key advantage of LHPF's historical planning mechanism. When the ego vehicle encounters a front car that causes it to decelerate, the sequential slowing down can lead to causal confusion in traditional planners like Pluto. As a result, Pluto might mistakenly generalize the slowing behavior and halt at intersections even in the absence of a front car.</p>
+            </div>
+            <div class="item">
+                <video src="videos/lhpf_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp2_1" controls></video>
+                <p>(LHPF) A robot frozen scenario. Surprisingly, LHPF mitigates this issue by leveraging its historical planning embeddings, which provide temporal consistency and preserve the ego's original driving intentions. This integration enables LHPF to better distinguish between causally linked behaviors and contextual artifacts, ensuring smoother and more deliberate decision-making in complex scenarios.</p>
+            </div>
+
+        <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+                var videos = document.querySelectorAll('video');
+                videos.forEach(function(video) {
+                    video.autoplay = true;
+                    video.controls = true;
+                    video.muted = true;
+                    video.loop = true;
+                    video.playsInline = true;
+                    video.playbackRate = 2.0;
+                    video.addEventListener('loadedmetadata', function() {
+                        this.playbackRate = 2.0;
+                    });
+                });
+            });
+        </script>
+</body>
+
+</html>
