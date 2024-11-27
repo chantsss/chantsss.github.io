@@ -188,7 +188,7 @@
           </div>
         </div>
         <p gif-caption> We compare two imitation learning planners for autonomous driving, focusing on the role of historical intentions. As shown in Figure 1, while both planners perform well initially, the planner without historical context diverges over time, whereas the planner with historical embeddings maintains consistent accuracy. Figure 2 illustrates the continuity and evolution of driving behaviors, emphasizing the importance of incorporating historical context for stable real-world planning.</p>
-
+      <br>
         <div class="content has-text-justified">
           <p class="text-center">
               <img src="./static/images/pipeline_page_1.png" class="center">
@@ -222,10 +222,83 @@
 </section> -->
 <!-- End Method -->
 
-<!-- Case study -->
+<!-- Five scenarios -->
 <section class="section hero">
   <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered" style="background: #ffffff">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">Dynamic Comparison with Baseline</h2>
+              <div class="content has-text-justified">
+          <div class="content has-text-justified">
+      </div>
+  </div>
+
+
+<!-- 5 interesting -->
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>
+<p class="gif-caption"><strong>An aggressive overtaking behavior.</strong> The ego vehicle
+changes lanes to a neighboring lane at first, accelerates past
+vehicles in the original lane, and successfully completes the overtaking. This scenario highlights the
+ability of our method to make timely lane changes and execute aggressive overtaking maneuvers effectively.</p>
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>    
+<p class="gif-caption"><strong>Competing for the right to turn at intersections.</strong> LHPF exhibites more natural and efficient driving policy when interact with other agents.</p>
+
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div> 
+<p> <strong>A collision scenario.</strong> While Pluto's conservative strategy often avoids risks, it fails to ensure safety in highly interactive scenarios, where LHPF demonstrates smoother interactions with surrounding vehicles.</p>
+
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>
+<p class="gif-caption"><strong>A robot frozen scenario.</strong> This phenomenon highlights a key advantage of LHPF's historical planning mechanism. When the ego vehicle encounters a front car that causes it to decelerate, the sequential slowing down can lead to causal confusion in traditional planners like Pluto. As a result, Pluto might mistakenly generalize the slowing behavior and halt at intersections even in the absence of a front car. Surprisingly, LHPF mitigates this issue by leveraging its historical planning embeddings, which provide temporal consistency and preserve the ego's original driving intentions. This integration enables LHPF to better distinguish between causally linked behaviors and contextual artifacts, ensuring smoother and more deliberate decision-making in complex scenarios.</p>
+
+</section>
+<!-- End Five scenarios -->
+
+<!-- Case study -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
           <div class="column is-four-fifths">
               <h2 class="title is-3">Case Analysis</h2>
               <div class="content has-text-justified">
@@ -276,83 +349,10 @@
 
 <!-- End Case study -->
 
-<!-- Five scenarios -->
-        <section class="section hero">
-          <div class="container is-max-desktop">
-              <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
-                  <div class="column is-four-fifths">
-                      <h2 class="title is-3">Dynamic Comparison with Baseline</h2>
-                      <div class="content has-text-justified">
-                  <div class="content has-text-justified">
-              </div>
-          </div>
-        
-
-        <!-- 5 interesting -->
-        <hr> <div class="container-gif">
-
-          <div class="item">
-              <video src="static/videos/pluto_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp1_1" controls></video>
-              <figcaption>Pluto</figcaption>
-          </div>
-          <div class="item">
-              <video src="static/videos/lhpf_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp2_1" controls></video>
-              <figcaption>LHPF</figcaption>
-          </div>
-      </div>
-      <p class="gif-caption"><strong>An aggressive overtaking behavior.</strong> The ego vehicle
-        changes lanes to a neighboring lane at first, accelerates past
-        vehicles in the original lane, and successfully completes the overtaking. This scenario highlights the
-        ability of our method to make timely lane changes and execute aggressive overtaking maneuvers effectively.</p>
-
-      <hr> <div class="container-gif">
-
-          <div class="item">
-              <video src="static/videos/pluto_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp1_1" controls></video>
-              <figcaption>Pluto</figcaption>
-          </div>
-          <div class="item">
-              <video src="static/videos/lhpf_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp2_1" controls></video>
-              <figcaption>LHPF</figcaption>
-          </div>
-      </div>    
-      <p class="gif-caption"><strong>Competing for the right to turn at intersections.</strong> LHPF exhibites more natural and efficient driving policy when interact with other agents.</p>
-  
-
-      <hr> <div class="container-gif">
-
-          <div class="item">
-              <video src="static/videos/pluto_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp1_1" controls></video>
-              <figcaption>Pluto</figcaption>
-          </div>
-          <div class="item">
-              <video src="static/videos/lhpf_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp2_1" controls></video>
-              <figcaption>LHPF</figcaption>
-          </div>
-      </div> 
-      <p> <strong>A collision scenario.</strong> While Pluto's conservative strategy often avoids risks, it fails to ensure safety in highly interactive scenarios, where LHPF demonstrates smoother interactions with surrounding vehicles.</p>
-
-
-      <hr> <div class="container-gif">
-
-          <div class="item">
-              <video src="static/videos/pluto_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp1_1" controls></video>
-              <figcaption>Pluto</figcaption>
-          </div>
-          <div class="item">
-              <video src="static/videos/lhpf_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp2_1" controls></video>
-              <figcaption>LHPF</figcaption>
-          </div>
-      </div>
-      <p class="gif-caption"><strong>A robot frozen scenario.</strong> This phenomenon highlights a key advantage of LHPF's historical planning mechanism. When the ego vehicle encounters a front car that causes it to decelerate, the sequential slowing down can lead to causal confusion in traditional planners like Pluto. As a result, Pluto might mistakenly generalize the slowing behavior and halt at intersections even in the absence of a front car. Surprisingly, LHPF mitigates this issue by leveraging its historical planning embeddings, which provide temporal consistency and preserve the ego's original driving intentions. This integration enables LHPF to better distinguish between causally linked behaviors and contextual artifacts, ensuring smoother and more deliberate decision-making in complex scenarios.</p>
-
-    </section>
-<!-- End Five scenarios -->
-
 <!-- More scenarios -->
   <section class="section hero">
     <div class="container is-max-desktop">
-        <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+        <div class="columns is-centered has-text-centered" style="background: #ffffff">
             <div class="column is-four-fifths">
                 <h2 class="title is-3">More Visualizations</h2>
                 <div class="content has-text-justified">
