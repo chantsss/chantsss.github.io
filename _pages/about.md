@@ -12,7 +12,7 @@ profile:
     <p><small>This is an optimistic pessimist. <br>
     Office: W1-129 IADC <br>
     Email: swangei[at]connect.ust.hk</small></p>
-news: false # includes a list of news items
+news: true # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
