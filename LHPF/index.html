@@ -1,173 +1,688 @@
 <!DOCTYPE html>
 <html>
-
-<head lang="en">
-    <script type="text/javascript"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-
-    <title>Dragtraffic</title>
-
-    <meta name="description" content="">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
-    <link rel="stylesheet" href="css/app.css">
-
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
-
-    <script src="js/app.js"></script>
-
-    <style>
-        .container-gif {
-            display: flex;
-            flex-wrap: wrap;
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 20px;
-            justify-content: space-between;
-        }
-
-        .item {
-            flex-basis: calc(50% - 10px);
-            margin-bottom: 20px;
-            text-align: center;
-            position: relative;
-            width: 900px;
-            height: 600px;
-        }
-
-        .item img {
-            max-width: 100%;
-            height: auto;
-        }
-
-        .item h3 {
-            font-size: 18px;
-            margin-top: 10px;
-        }
-
-    </style>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="URL OF THE WEBSITE"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
 
 
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>Academic Project Page</title>
+  <link rel="icon" type="image/x-icon" href="static/images/logo.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+  
 </head>
-
 <body>
-    <div class="container" id="main">
-        <div class="row">
-            <h1 class="col-md-12 text-center">
-                LHPF: Look back the History and Plan for the Future in Autonomous Driving
-                <small>
-                </small>
-            </h1>
-        </div>
 
-        <section class="section hero is-light">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
-                    <div class="column is-four-fifths">
-                        <h2 class="title is-3">Planning Demonstration</h2>
-                        <div class="content has-text-justified">
-                        </div>
-                    </div>
-                </div>
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <img src="static/images/logo.png" alt="Logo" style="width: 300px; height: auto;">
+            <h1 class="title is-1 publication-title">LHPF: Look back the History and Plan for the Future in Autonomous Driving</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="https://chantsss.github.io/" target="_blank">Sheng WANG</a><sup>1</sup>,</span>
+                <span class="author-block">
+                  <a href="https://www.ustyaotian.com/" target="_blank">Yao TIAN</a><sup>1</sup>,</span>
+                  <span class="author-block">
+                    <a href="https://scholar.google.com/citations?user=PqpXJZQAAAAJ&hl=en" target="_blank">Xiaodong MEI</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="https://scholar.google.com/citations?hl=zh-CN&authuser=1&user=IjWsKswAAAAJ" target="_blank">Ge SUN</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="https://jchengai.github.io/" target="_blank">Jie CHENG</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="https://scholar.google.com/citations?user=uS8x8TkAAAAJ&hl=zh-CN&authuser=1" target="_blank">Fulong MA</a><sup>2</sup>,</span>
+                  </span> <br>
+                  <!-- next row -->
+
+                  <span class="author-block"></span>
+                    <a href="https://www.cse.ust.hk/~psander/" target="_blank">Pedro V. Sander</a><sup>1</sup>,</span>
+                  </span>
+                  <span class="author-block"></span>
+                    <a href="https://junweiliang.me/" target="_blank">Junwei LIANG</a><sup>1,2,†</sup>
+                  </span>
+                  </div>
+
+                  <div class="is-size-5 publication-authors">
+                    <span class="author-block"><sup>1</sup>HKUST, <sup>2</sup>HKUST(GZ)</span>
+                    <span class="eql-cntrb"><small><br><sup>†</sup>Indicates Corresponding Author</small></span>
+                  </div>
+
+                  <div class="column has-text-centered">
+                    <div class="publication-links">
+                         <!-- Arxiv PDF link -->
+                      <span class="link-block">
+                        <a href="https://arxiv.org/abs/2411.17253" target="_blank"
+                        class="external-link button is-normal is-rounded is-dark">
+                        <span class="icon">
+                          <i class="fas fa-file-pdf"></i>
+                        </span>
+                        <span>Paper</span>
+                      </a>
+                    </span>
+
+                    <!-- Supplementary PDF link -->
+                    <span class="link-block">
+                      <a href="https://arxiv.org/abs/2411.17253" target="_blank"
+                      class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Supplementary</span>
+                    </a>
+                  </span>
+
+                  <!-- Github link -->
+                  <span class="link-block">
+                    <a href="https://chantsss.github.io/LHPF/" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.17253" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="ai ai-arxiv"></i>
+                  </span>
+                  <span>arXiv</span>
+                </a>
+              </span>
             </div>
-        </section>
-
-        <div class="text">
-            <p>The ego plan is shown in yellow and pink, while agent predictions are depicted in green and blue. Reference lines are visualized as shaded arrows, and the ground truth trajectory appears as a gray shadow. Note that in reactive closed-loop simulation, the ground truth is not the optimal solution since observations change dynamically and it serves only as a recording of logged data. </p>            
+          </div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
 
-        <section class="section hero is-light">
-            <div class="container is-max-desktop">
-                <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
-                    <div class="column is-four-fifths">
-                        <div class="content has-text-justified">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>        
-        </section>        
+
+<!-- Teaser video-->
+
+<!-- End teaser video -->
+
+<!-- Paper abstract -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Decision-making and planning in autonomous driving critically reflect the safety of the system, making effective planning imperative. Current imitation learning-based planning algorithms often merge historical trajectories with present observations to predict future candidate paths. However, these algorithms typically assess the current and historical plans independently, leading to discontinuities in driving intentions and an accumulation of errors with each step in a discontinuous plan. To tackle this challenge, this paper introduces LHPF, an imitation learning planner that integrates historical planning information. Our approach employs a historical intention aggregation module that pools historical planning intentions, which are then combined with a spatial query vector to decode the final planning trajectory. Furthermore, we incorporate a comfort auxiliary task to enhance the human-like quality of the driving behavior. Extensive experiments using both real-world and synthetic data demonstrate that LHPF not only surpasses existing advanced learning-based planners in planning performance but also marks the first instance of a purely learning-based planner outperforming the expert. Additionally, the application of the historical intention aggregation module across various backbones highlights the considerable potential of the proposed method.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Motivation -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered"style="background: #F2F2F2">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Motivation & Method</h2>
+        <div class="columns">
+          <div class="column is-half">
+            <figure class="image">
+              <img src="static/images/first_img_page_1.png" alt="Motivation Image 1" style="height: 400px;">
+              <!-- <p><small><strong>Figure 1. Planning with and
+                without historical intentions. </small></strong></p> -->
+              <figcaption>Figure 1. Planning with and
+                without historical intentions.</figcaption>
+            </figure>
+          </div>
+          <div class="column is-half has-text-centered">
+            <figure class="image">
+              <img src="static/images/planning_comparison_new_page_1.png" alt="Motivation Image 2" style="height: 400px;">
+              <figcaption>Figure 2. Planning Stream Demonstration.</figcaption>
+              <!-- <p><small><strong>Figure 2. Planning Stream Demonstration.</small></strong></p> -->
+            </figure>
+          </div>
+        </div>
+        <p gif-caption> We compare two imitation learning planners for autonomous driving, focusing on the role of historical intentions. As shown in Figure 1, while both planners perform well initially, the planner without historical context diverges over time, whereas the planner with historical embeddings maintains consistent accuracy. Figure 2 illustrates the continuity and evolution of driving behaviors, emphasizing the importance of incorporating historical context for stable real-world planning.</p>
+
+        <div class="content has-text-justified">
+          <p class="text-center">
+              <img src="./static/images/pipeline_page_1.png" class="center">
+          </p>
+        </div>
+        <p gif-caption> A stack of planners generates historical planning embeddings at each time step, which are stored in a historical intention pool and combined with reference line queries. Spatio-temporal queries are then aggregated and processed using self and cross attention with scene context as keys and values. Finally, the current planning embedding is passed through a multi-layer perceptron to generate future trajectories and scores.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+<!-- End Motivation -->
+
+<!-- Method -->
+  <!-- <section class="section hero">
+    <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+        <div class="column is-four-fifths">
+        <h2 class="title is-3">Method</h2>
+        <div class="content has-text-justified">
+            <p class="text-center">
+                <img src="./static/images/pipeline_page_1.png" class="center">
+            </p>
+            <p>
+              A stack of planners generates historical planning embeddings at each time step, which are stored in a historical intention pool and combined with reference line queries. Spatio-temporal queries are then aggregated and processed using self and cross attention with scene context as keys and values. Finally, the current planning embedding is passed through a multi-layer perceptron to generate future trajectories and scores.
+            </p>
+        </div>
+        </div>
+    </div>
+    </div>
+</section> -->
+<!-- End Method -->
+
+<!-- Case study -->
+<section class="section hero">
+  <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered" style="background: #ffffff">
+          <div class="column is-four-fifths">
+              <h2 class="title is-3">Case Analysis</h2>
+              <div class="content has-text-justified">
+          <div class="content has-text-justified">
+          <p class="text-center">
+              <img src="./static/images/demo_new_compressed_page_1.png" class="center">
+          </p>
+          <p gif-caption>
+            <strong>(a) An aggressive overtaking behavior.</strong> The ego vehicle
+            changes lanes to a neighboring lane at t1, accelerates past
+            vehicles in the original lane at t2, and successfully com-
+            pletes the overtaking by t3. This scenario highlights the
+            ability of our method to make timely lane changes and exe-
+            cute aggressive overtaking maneuvers effectively.
+            <strong>(b) A high-density traffic intersection scenario.</strong> At time t0, the autonomous vehicle is hindered by slow-moving traf-
+            fic ahead. By t1, it initiates a lane change maneuver and
+            starts accelerating, successfully transitioning to an adjacent
+            lane by t3. This demonstrates how our model handles com-
+            plex traffic interactions and efficiently maneuvers through
+            dense environments.
+            <strong>(c) A right-turn at an intersection.</strong> The ego vehicle begins
+            to turn right into the side road at t0, fully entering it by t1.
+            At this moment, a vehicle from the opposite direction unex-
+            pectedly overtakes, forcing the ego vehicle to make a sharp
+            right turn and realign back to the intended direction by t3.
+            This showcases the planner’s ability to react dynamically to
+            sudden obstacles and adjust its trajectory smoothly.
+            <strong>(d) A high-interaction roundabout scenario.</strong> At t1, the
+            ego vehicle engages in a negotiation with a large vehicle at-
+            tempting to merge into the main road. After yielding to let
+            the large vehicle pass, it quickly accelerates in the neigh-
+            boring lane at t3, overtaking the large vehicle by t4. This
+            scenario highlights the planner’s capability to handle inter-
+            actions with other road users and optimize vehicle trajecto-
+            ries in crowded environments.
+            <strong>(e) An overtaking attempt.</strong> Finally, we display an over-
+            taking attempt by the ego vehicle. Due to the slow-moving
+            vehicle ahead, the ego vehicle continuously decelerates be-
+            tween t0 and t1. At t2, it attempts a left lane change to overtake but quickly abandons this maneuver due to a fast-
+            approaching vehicle from the left rear, returning to the origi-
+            nal lane at t3 and continues to observe and wait for an over-
+            taking opportunity. This showcases the flexible and adap-
+            tive nature of our method in dynamic driving scenarios.
+        </p>
+      </div>
+  </div>
+  </section>
+
+<!-- End Case study -->
+
+<!-- Five scenarios -->
+        <section class="section hero">
+          <div class="container is-max-desktop">
+              <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+                  <div class="column is-four-fifths">
+                      <h2 class="title is-3">Dynamic Comparison with Baseline</h2>
+                      <div class="content has-text-justified">
+                  <div class="content has-text-justified">
+              </div>
+          </div>
         
+
         <!-- 5 interesting -->
         <hr> <div class="container-gif">
 
-            <div class="item">
-                <video src="videos/pluto_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp1_1" controls></video>
-                <p>(Pluto) An aggressive overtaking behavior.</p>
-            </div>
-            <div class="item">
-                <video src="videos/lhpf_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp2_1" controls></video>
-                <p>(LHPF) An aggressive overtaking behavior. The ego vehicle
-                    changes lanes to a neighboring lane at first, accelerates past
-                    vehicles in the original lane, and successfully completes the overtaking. This scenario highlights the
-                    ability of our method to make timely lane changes and execute aggressive overtaking maneuvers effectively.</p>
-            </div>
+          <div class="item">
+              <video src="static/videos/pluto_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp1_1" controls></video>
+              <figcaption>Pluto</figcaption>
+          </div>
+          <div class="item">
+              <video src="static/videos/lhpf_interesting_4/2021.07.24.03.01.39_veh-47_00930_01568_cd63e5191fb854c4.mp4" alt="mp2_1" controls></video>
+              <figcaption>LHPF</figcaption>
+          </div>
+      </div>
+      <p class="gif-caption"><strong>An aggressive overtaking behavior.</strong> The ego vehicle
+        changes lanes to a neighboring lane at first, accelerates past
+        vehicles in the original lane, and successfully completes the overtaking. This scenario highlights the
+        ability of our method to make timely lane changes and execute aggressive overtaking maneuvers effectively.</p>
+
+      <hr> <div class="container-gif">
+
+          <div class="item">
+              <video src="static/videos/pluto_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp1_1" controls></video>
+              <figcaption>Pluto</figcaption>
+          </div>
+          <div class="item">
+              <video src="static/videos/lhpf_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp2_1" controls></video>
+              <figcaption>LHPF</figcaption>
+          </div>
+      </div>    
+      <p class="gif-caption"><strong>Competing for the right to turn at intersections.</strong> LHPF exhibites more natural and efficient driving policy when interact with other agents.</p>
+  
+
+      <hr> <div class="container-gif">
+
+          <div class="item">
+              <video src="static/videos/pluto_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp1_1" controls></video>
+              <figcaption>Pluto</figcaption>
+          </div>
+          <div class="item">
+              <video src="static/videos/lhpf_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp2_1" controls></video>
+              <figcaption>LHPF</figcaption>
+          </div>
+      </div> 
+      <p> <strong>A collision scenario.</strong> While Pluto's conservative strategy often avoids risks, it fails to ensure safety in highly interactive scenarios, where LHPF demonstrates smoother interactions with surrounding vehicles.</p>
+
+
+      <hr> <div class="container-gif">
+
+          <div class="item">
+              <video src="static/videos/pluto_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp1_1" controls></video>
+              <figcaption>Pluto</figcaption>
+          </div>
+          <div class="item">
+              <video src="static/videos/lhpf_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp2_1" controls></video>
+              <figcaption>LHPF</figcaption>
+          </div>
+      </div>
+      <p class="gif-caption"><strong>A robot frozen scenario.</strong> This phenomenon highlights a key advantage of LHPF's historical planning mechanism. When the ego vehicle encounters a front car that causes it to decelerate, the sequential slowing down can lead to causal confusion in traditional planners like Pluto. As a result, Pluto might mistakenly generalize the slowing behavior and halt at intersections even in the absence of a front car. Surprisingly, LHPF mitigates this issue by leveraging its historical planning embeddings, which provide temporal consistency and preserve the ego's original driving intentions. This integration enables LHPF to better distinguish between causally linked behaviors and contextual artifacts, ensuring smoother and more deliberate decision-making in complex scenarios.</p>
+
+    </section>
+<!-- End Five scenarios -->
+
+<!-- More scenarios -->
+  <section class="section hero">
+    <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered" style="background: #F2F2F2">
+            <div class="column is-four-fifths">
+                <h2 class="title is-3">More Visualizations</h2>
+                <div class="content has-text-justified">
+            <div class="content has-text-justified">
+        </div>
+    </div>
+
+        <hr> <div class="container-gif">
+
+          <div class="item">
+              <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.07.12.01.13_veh-47_04492_05024_0adcd0e658d359a7.mp4" alt="mp1_1" controls></video>
+              <figcaption>Pluto</figcaption>
+          </div>
+          <div class="item">
+              <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.07.12.01.13_veh-47_04492_05024_0adcd0e658d359a7.mp4" alt="mp2_1" controls></video>
+              <figcaption>LHPF</figcaption>
+          </div>
+      </div>
+
+      <hr> <div class="container-gif">
+
+        <div class="item">
+            <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.07.12.01.13_veh-47_04492_05024_6e6b7deeec9151a4.mp4" alt="mp1_1" controls></video>
+            <figcaption>Pluto</figcaption>
+        </div>
+        <div class="item">
+            <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.07.12.01.13_veh-47_04492_05024_6e6b7deeec9151a4.mp4" alt="mp2_1" controls></video>
+            <figcaption>LHPF</figcaption>
+        </div>
+    </div>
+
+    <hr> <div class="container-gif">
+
+      <div class="item">
+          <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.07.17.49.04_veh-47_00561_01239_b7ec5cdee9765f23.mp4" alt="mp1_1" controls></video>
+          <figcaption>Pluto</figcaption>
+      </div>
+      <div class="item">
+          <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.07.17.49.04_veh-47_00561_01239_b7ec5cdee9765f23.mp4" alt="mp2_1" controls></video>
+          <figcaption>LHPF</figcaption>
+      </div>
+   </div>
+
+  <hr> <div class="container-gif">
+
+    <div class="item">
+        <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.07.18.29.03_veh-16_00049_00824_fb7742eb940853b5.mp4" alt="mp1_1" controls></video>
+        <figcaption>Pluto</figcaption>
+    </div>
+    <div class="item">
+        <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.07.18.29.03_veh-16_00049_00824_fb7742eb940853b5.mp4" alt="mp2_1" controls></video>
+        <figcaption>LHPF</figcaption>
+    </div>
+</div>
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.07.18.29.03_veh-16_04252_04622_53f040fc7b815331.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.07.18.29.03_veh-16_04252_04622_53f040fc7b815331.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.08.16.31.33_veh-38_03406_03605_bdbec8db87c05b88.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.08.16.31.33_veh-38_03406_03605_bdbec8db87c05b88.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+
+  <div class="item">
+      <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.06.08.18.18.30_veh-38_00005_00421_790824a2df935497.mp4" alt="mp1_1" controls></video>
+      <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+      <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.06.08.18.18.30_veh-38_00005_00421_790824a2df935497.mp4" alt="mp2_1" controls></video>
+      <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.00.36.59_veh-47_04360_05497_b2ed684a0dd1594e.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.00.36.59_veh-47_04360_05497_b2ed684a0dd1594e.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.16.51.13_veh-26_01887_04395_53e9d4fd576f5955.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.16.51.13_veh-26_01887_04395_53e9d4fd576f5955.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.16.51.13_veh-26_01887_04395_d9e89ee9ac10598d.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.16.51.13_veh-26_01887_04395_d9e89ee9ac10598d.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.20.37.45_veh-17_00386_01357_c5b92860ee7a565e.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.20.37.45_veh-17_00386_01357_c5b92860ee7a565e.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.22.52.16_veh-35_04956_06521_2e3a20d7f8015043.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.22.52.16_veh-35_04956_06521_2e3a20d7f8015043.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.22.53.21_veh-47_01429_03205_0e1e0ca3678759e0.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.22.53.21_veh-47_01429_03205_0e1e0ca3678759e0.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.07.24.23.59.52_veh-12_03414_04602_3dc3d20b2f78573c.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.07.24.23.59.52_veh-12_03414_04602_3dc3d20b2f78573c.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.08.24.13.20.17_veh-08_00016_00738_3ad61242db035638.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.08.24.13.20.17_veh-08_00016_00738_3ad61242db035638.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.08.24.14.35.46_veh-45_00715_01404_dfe09b52c98a5d55.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.08.24.14.35.46_veh-45_00715_01404_dfe09b52c98a5d55.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.08.24.19.26.32_veh-08_01958_02519_6591919b5db45646.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.08.24.19.26.32_veh-08_01958_02519_6591919b5db45646.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.09.13.17.32.06_veh-39_00776_01213_2965e4c9734152d9.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.09.13.17.32.06_veh-39_00776_01213_2965e4c9734152d9.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.09.14.15.03.51_veh-45_00178_00336_d1a170aad6bd527a.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.09.14.15.03.51_veh-45_00178_00336_d1a170aad6bd527a.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.09.14.16.46.51_veh-45_00149_00900_bbc7bb010c275ea4.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.09.14.16.46.51_veh-45_00149_00900_bbc7bb010c275ea4.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.09.14.18.43.41_veh-45_01555_02218_c5314146ee805579.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.09.14.18.43.41_veh-45_01555_02218_c5314146ee805579.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+<hr> <div class="container-gif">
+  <div class="item">
+    <video src="static/videos/pluto_interesting/closed_loop_reactive_agents/2021.09.14.19.46.05_veh-45_00086_00843_b9371ca8b59154c3.mp4" alt="mp1_1" controls></video>
+    <figcaption>Pluto</figcaption>
+  </div>
+  <div class="item">
+    <video src="static/videos/lhpf_interesting/closed_loop_reactive_agents/2021.09.14.19.46.05_veh-45_00086_00843_b9371ca8b59154c3.mp4" alt="mp2_1" controls></video>
+    <figcaption>LHPF</figcaption>
+  </div>
+</div>
+
+  </section>
+
+<!-- End More scenarios -->
+
+<!-- Image carousel -->
+<!-- End image carousel -->
+
+<!-- Youtube video -->
+<!-- End youtube video -->
+
+<!-- Video carousel -->
+<!-- End video carousel -->
+
+<!-- Paper poster -->
+<!--End paper poster -->
+
+<script type="text/javascript">
+  document.addEventListener('DOMContentLoaded', function() {
+      var videos = document.querySelectorAll('video');
+      videos.forEach(function(video) {
+          video.autoplay = true;
+          video.controls = true;
+          video.muted = true;
+          video.loop = true;
+          video.playsInline = true;
+          video.playbackRate = 2.0;
+          video.addEventListener('loadedmetadata', function() {
+              this.playbackRate = 2.0;
+          });
+      });
+  });
+</script>
+
+<!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>@misc{wang2024lhpflookhistoryplan,
+        title={LHPF: Look back the History and Plan for the Future in Autonomous Driving}, 
+        author={Sheng Wang and Yao Tian and Xiaodong Mei and Ge Sun and Jie Cheng and Fulong Ma and Pedro V. Sander and Junwei Liang},
+        year={2024},
+        eprint={2411.17253},
+        archivePrefix={arXiv},
+        primaryClass={cs.RO},
+        url={https://arxiv.org/abs/2411.17253}, 
+  }</code></pre>
+    </div>
+</section>
+<!--End BibTex citation -->
+
+
+  <footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+
+          <p>
+            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
 
         </div>
+      </div>
+    </div>
+  </div>
+</footer>
 
-        <hr> <div class="container-gif">
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
 
-            <div class="item">
-                <video src="videos/pluto_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp1_1" controls></video>
-                <p>(Pluto) Competing for the right to turn at intersections.</p>
-            </div>
-            <div class="item">
-                <video src="videos/lhpf_interesting_4/2021.07.24.16.48.51_veh-17_02573_03272_36516922212f5065.mp4" alt="mp2_1" controls></video>
-                <p>(LHPF) Competing for the right to turn at intersections. LHPF exhibites more natural and efficient driving policy when interact with other agents.</p>
-            </div>
+    <!-- End of Statcounter Code -->
 
-        </div>      
-
-        <hr> <div class="container-gif">
-
-            <div class="item">
-                <video src="videos/pluto_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp1_1" controls></video>
-                <p>(Pluto) A collision scenario. While Pluto's conservative strategy often avoids risks, it fails to ensure safety in highly interactive scenarios, where LHPF demonstrates smoother interactions with surrounding vehicles.</p>
-            </div>
-            <div class="item">
-                <video src="videos/lhpf_interesting_4/2021.07.24.19.10.14_veh-37_00015_01108_067488f23ef3554a.mp4" alt="mp2_1" controls></video>
-                <p>(LHPF)A collision scenario. </p>
-            </div>
-
-        </div> 
-
-        <hr> <div class="container-gif">
-
-            <div class="item">
-                <video src="videos/pluto_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp1_1" controls></video>
-                <p>(Pluto) A robot frozen scenario. 
-                    This phenomenon highlights a key advantage of LHPF's historical planning mechanism. When the ego vehicle encounters a front car that causes it to decelerate, the sequential slowing down can lead to causal confusion in traditional planners like Pluto. As a result, Pluto might mistakenly generalize the slowing behavior and halt at intersections even in the absence of a front car.</p>
-            </div>
-            <div class="item">
-                <video src="videos/lhpf_interesting_4/2021.08.09.18.37.41_veh-28_00053_00548_ec707117dc6655b5.mp4" alt="mp2_1" controls></video>
-                <p>(LHPF) A robot frozen scenario. Surprisingly, LHPF mitigates this issue by leveraging its historical planning embeddings, which provide temporal consistency and preserve the ego's original driving intentions. This integration enables LHPF to better distinguish between causally linked behaviors and contextual artifacts, ensuring smoother and more deliberate decision-making in complex scenarios.</p>
-            </div>
-
-        <script type="text/javascript">
-            document.addEventListener('DOMContentLoaded', function() {
-                var videos = document.querySelectorAll('video');
-                videos.forEach(function(video) {
-                    video.autoplay = true;
-                    video.controls = true;
-                    video.muted = true;
-                    video.loop = true;
-                    video.playsInline = true;
-                    video.playbackRate = 2.0;
-                    video.addEventListener('loadedmetadata', function() {
-                        this.playbackRate = 2.0;
-                    });
-                });
-            });
-        </script>
-</body>
-
-</html>
+  </body>
+  </html>
