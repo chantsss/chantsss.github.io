@@ -1,6 +1,24 @@
 ---
 ---
 
+
+@misc{LHPF,
+      title={LHPF: Look back the History and Plan for the Future in Autonomous Driving}, 
+      author={Sheng Wang and Yao Tian and Xiaodong Mei and Ge Sun and Jie Cheng and Fulong Ma and Pedro V. Sander and Junwei Liang},
+      year={2024},
+      eprint={2411.17253},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      note={[Under review]},
+      selected={true},
+      website={https://chantsss.github.io/LHPF/},
+      bibtex_show={true},
+      preview={LHPF.png},
+      url={https://arxiv.org/abs/2411.17253}, 
+      abstract={Decision-making and planning in autonomous driving critically reflect the safety of the system, making effective planning imperative. Current imitation learning-based planning algorithms often merge historical trajectories with present observations to predict future candidate paths. However, these algorithms typically assess the current and historical plans independently, leading to discontinuities in driving intentions and an accumulation of errors with each step in a discontinuous plan. To tackle this challenge, this paper introduces LHPF, an imitation learning planner that integrates historical planning information. Our approach employs a historical intention aggregation module that pools historical planning intentions, which are then combined with a spatial query vector to decode the final planning trajectory. Furthermore, we incorporate a comfort auxiliary task to enhance the human-like quality of the driving behavior. Extensive experiments using both real-world and synthetic data demonstrate that LHPF not only surpasses existing advanced learning-based planners in planning performance but also marks the first instance of a purely learning-based planner outperforming the expert. Additionally, the application of the historical intention aggregation module across various backbones highlights the considerable potential of the proposed method. The code will be made publicly available.},
+      
+}
+
 @misc{wang2024dragtrafficinteractivecontrollabletraffic,
       title={DragTraffic: Interactive and Controllable Traffic Scene Generation for Autonomous Driving}, 
       author={Sheng Wang and Ge Sun and Fulong Ma and Tianshuai Hu and Qiang Qin and Yongkang Song and Lei Zhu and Junwei Liang},
