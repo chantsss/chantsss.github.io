@@ -23,5 +23,5 @@ Before joining HKUST, I completed my Master's degree in Advanced Robotics at **Ã
 
 My research interests span **trajectory prediction**, **end-to-end planning**, **generative models**, **autonomous driving**, **robotics**, and related fields. I am passionate about exploring innovative solutions in autonomous systems to shape a safer and more efficient future. 
 
-I'm currently looking for a job or a postdoc position, please feel free to drop me an email for any opportunities that might be a good fit for me. 
+Iâ€™m currently looking for a job (both full time and intern) or a postdoc position, please feel free to drop me an email for any opportunities that might be a good fit for me.
 
