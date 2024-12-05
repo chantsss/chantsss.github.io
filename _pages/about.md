@@ -22,5 +22,5 @@ Before joining HKUST, I completed my Master's degree in Advanced Robotics at **�
 
 My research interests span **trajectory prediction**, **end-to-end planning**, **generative models**, **autonomous driving**, **robotics**, and related fields. I am passionate about exploring innovative solutions in autonomous systems to shape a safer and more efficient future. 
 
-[![CV](https://img.icons8.com/material-outlined/24/000000/resume.png)](assets/pdf/Sheng_WANG_CV.pdf) I’m currently looking for a job (both full time and intern) or a postdoc position, please feel free to drop me an email for any opportunities that might be a good fit for me. 
+I’m currently looking for a job (both full time and intern) or a postdoc position, please feel free to drop me an email for any opportunities. You can find my resume here [![CV](https://img.icons8.com/material-outlined/24/000000/resume.png)](assets/pdf/Sheng_WANG_CV.pdf).
 
