@@ -20,7 +20,7 @@ Hi, I’m Sheng Wang, a final year Ph.D. candidate at **the Hong Kong University
 
 Before joining HKUST, I completed my Master's degree in Advanced Robotics at **École Centrale de Nantes** (ECN), France, in 2020, and my Bachelor's degree in Optoelectronic Information Science and Engineering at **Harbin Institute of Technology** (HIT), China, in 2018.
 
-My research interests span **trajectory prediction**, **end-to-end planning**, **generative models**, **autonomous driving**, **robotics**, and related fields. I am passionate about exploring innovative solutions in autonomous systems to shape a safer and more efficient future. 
+My research interests span **supervised/self-supervised learning**, **reinforcement learning**, **decision making**, **generative models**, **distillation**, **autonomous driving**, **robotics** and related fields. I am passionate about exploring innovative solutions in autonomous systems to shape a safer and more efficient future. 
 
 I’m currently looking for a job (both full time and intern) or a postdoc position, please feel free to drop me an email for any opportunities. You can find my resume here [![CV](https://img.icons8.com/material-outlined/24/000000/resume.png)](assets/pdf/Sheng_WANG_CV.pdf).
 
