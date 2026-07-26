@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Led Roboscience’s World Model Group to develop embodied world models from the ground up.
+Led RoboScience’s World Model Group to develop embodied world models from the ground up.

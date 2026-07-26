@@ -16,8 +16,8 @@ selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
 
-Hi, I’m Sheng Wang. I earned my Ph.D. from **the Hong Kong University of Science and Technology** (HKUST), where I was fortunate to be supervised by Prof. [Pedro V. SANDER](https://www.cse.ust.hk/~psander/) and Prof. [Junwei LIANG](https://junweiliang.me/). I had an unforgettable time at the Cheng Kar-Shun Robotics Institute (CKSRI) and the Intelligent and Autonomous Driving Center (IADC), where I learned a great deal and enjoyed working alongside my colleagues.
+Hi, I’m Sheng Wang. I currently lead the World Model Group at **[RoboScience](https://en.roboscience.co/)**, where I focus on **embodied AI** and **world models**. My team is actively hiring **full-time researchers and interns** — if you are excited about embodied AI and world models, I would love to collaborate, so feel free to reach out.
+
+I earned my Ph.D. from **the Hong Kong University of Science and Technology** (HKUST), where I was fortunate to be supervised by Prof. [Pedro V. SANDER](https://www.cse.ust.hk/~psander/) and Prof. [Junwei LIANG](https://junweiliang.me/). During my Ph.D., my research centered on **vision-language-action (VLA)** and **end-to-end** learning for **autonomous driving**. I had an unforgettable time at the Cheng Kar-Shun Robotics Institute (CKSRI) and the Intelligent and Autonomous Driving Center (IADC), where I learned a great deal and enjoyed working alongside my colleagues.
 
 Before joining HKUST, I completed my Master's degree in Advanced Robotics at **École Centrale de Nantes** (ECN), France, in 2020, and my Bachelor's degree in Optoelectronic Information Science and Engineering at **Harbin Institute of Technology** (HIT), China, in 2018.
-
-During my Ph.D., my research centered on **vision-language-action (VLA)** and **end-to-end** learning for **autonomous driving**. Now I focus on **embodied AI** and **world models**, and I lead the World Model Group at **Roboscience**. My team is actively hiring **interns** — if you are excited about embodied AI and world models, I would love to collaborate, so feel free to reach out.
