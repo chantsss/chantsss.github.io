@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New work: [**WorldFlow**](https://worldflow-rbs.github.io/).
+[**WorldFlow**](https://worldflow-rbs.github.io/) jointly predicts future video and 3D motion through large-scale pretraining.

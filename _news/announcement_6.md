@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-New work: [**GenSight**](https://gensight-rbs.github.io/).
+[**GenSight**](https://gensight-rbs.github.io/) unifies video generation and 4D perception for embodied world modeling.
