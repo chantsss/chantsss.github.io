@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Two new works: [**GenSight**](https://gensight-rbs.github.io/) and [**WorldFlow**](https://worldflow-rbs.github.io/).
+New work: [**GenSight**](https://gensight-rbs.github.io/).
