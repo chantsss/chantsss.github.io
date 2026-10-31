@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new preprint [**WorldFlow**](https://worldflow-rbs.github.io/) on joint video and 3D motion prediction is now on arXiv!
+Introducing [**WorldFlow**](https://worldflow-rbs.github.io/), our new work on joint video and 3D motion prediction, now available on arXiv.
