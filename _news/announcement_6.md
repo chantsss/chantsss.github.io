@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our new preprint [**GenSight**](https://gensight-rbs.github.io/) on unified video generation and 4D perception is now on arXiv!
+Our new work [**GenSight**](https://gensight-rbs.github.io/) on unified video generation and 4D perception is now on arXiv!
